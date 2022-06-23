@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <meta name = "viewport" content ="width=device-width, initial-scale = 1.0">
+    <!-- loads the css file -->
+    <link rel="stylesheet" href="stylish.css">
+    <!-- Loads the images used for the thermometer, humidity and refresh button -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+</head>
+<body>
+
+<!-- Page where the weather location is entered -->
+
+<div class ="wrapper">
+    <header><i class ="material-icons">refresh</i>Weather App</header>
+<section class ="input-part">
+    <p class = "info-txt"></p>
+    <input type = "text" spellcheck="false" placeholder="Anywhere, Earth" required>
+    <div class = "separator"></div>
+    <button>Use Current Location</button>
+    </section>
+
+    <!-- The page with the weather information -->
+
+    <section class = "weather-part">
+    <img src ="SVG\cloudy.svg" alt ="Weather Icons">
+        <div class ="temp">
+            <span class ="numb">13</span>
+            <span class ="deg">°</span>F
+        </div>
+        <div class ="weather">Cloudy</div>
+            <div class ="location">
+                <i class ="material-icons">place</i>
+                <span>Fairfax, Virginia</span>
+            </div>
+            <div class ="bottom-details">
+                <div class = "column feels">
+                    <i class="material-icons">thermostat</i>
+                        <div class ="details">
+                            <div class ="temp">
+                                <span class ="numb-2">18</span>
+                                <span class ="deg">°</span>F
+                        </div>
+                            <p>Feels like</p>
+                        </div>
+                </div>
+                <div class = "column humidity">
+                    <i class="material-icons">opacity</i>
+                    <div class ="details">
+                            <span>70%</span>
+                        <p>Humidity</p>
+                    </div>
+            </div>
+            </div>
+    </section>
+</div>
+
+<!-- loads the javascript file -->
+<script src="script.js"></script>
+
+</body>
+</html>
